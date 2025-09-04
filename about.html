@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于我们 · 仁风知识仓库</title>
+  <link rel="preload" href="css/modern-ui.css" as="style">
+  <link rel="stylesheet" href="css/modern-ui.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="了解仁风知识仓库的使命与愿景" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+</head>
+<body>
+  <header class="modern-header">
+    <nav class="modern-nav">
+      <a class="logo-modern" href="index.html">
+        <span class="logo-icon">R</span>
+        <span data-i18n="site_title">仁风知识仓库</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="home">首页</a></li>
+        <li><a href="about.html" data-i18n="about" style="color: var(--accent-gold);">关于</a></li>
+        <li><a href="privacy.html" data-i18n="privacy_policy">隐私政策</a></li>
+        <li><a href="terms.html" data-i18n="terms_of_service">用户协议</a></li>
+        <li>
+          <select id="language-selector" aria-label="language" style="padding: 4px 8px;">
+            <option value="zh-CN">简体中文</option>
+            <option value="zh-TW">繁體中文</option>
+            <option value="en">English</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container small" style="padding: 3rem 2rem;">
+      <article>
+        <h1 data-i18n="about" style="font-size: 2.5rem; text-align: center; margin-bottom: 2rem;">关于我们</h1>
+        
+        <section class="card" style="margin-bottom: 2rem;">
+          <h2 style="color: var(--accent-gold); margin-bottom: 1rem;" data-i18n="our_mission">我们的使命</h2>
+          <p style="line-height: 1.7; color: var(--text-secondary);" data-i18n="mission_text">
+            仁风知识仓库致力于建设一个高效、安全、开放的知识分享平台。我们相信知识的力量能够推动社会进步，让每个人都能轻松获取优质资源，实现个人成长与价值创造。
+          </p>
+        </section>
+
+        <section class="card" style="margin-bottom: 2rem;">
+          <h2 style="color: var(--accent-gold); margin-bottom: 1rem;" data-i18n="our_vision">我们的愿景</h2>
+          <p style="line-height: 1.7; color: var(--text-secondary);" data-i18n="vision_text">
+            成为全球领先的知识资源聚合平台，连接知识创造者与学习者，构建可持续的知识生态系统，为人类智慧的传承与发展贡献力量。
+          </p>
+        </section>
+
+        <section class="card" style="margin-bottom: 2rem;">
+          <h2 style="color: var(--accent-gold); margin-bottom: 1rem;" data-i18n="our_values">核心价值观</h2>
+          <div style="display: grid; gap: 1rem;">
+            <div style="padding: 1rem; background: var(--background-secondary); border-radius: var(--radius-medium);">
+              <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;" data-i18n="integrity">诚信为本</h3>
+              <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="integrity_desc">秉承诚实守信的原则，确保平台内容的真实性与可靠性。</p>
+            </div>
+            <div style="padding: 1rem; background: var(--background-secondary); border-radius: var(--radius-medium);">
+              <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;" data-i18n="innovation">创新驱动</h3>
+              <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="innovation_desc">持续技术创新，优化用户体验，引领知识分享新模式。</p>
+            </div>
+            <div style="padding: 1rem; background: var(--background-secondary); border-radius: var(--radius-medium);">
+              <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;" data-i18n="collaboration">开放协作</h3>
+              <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="collaboration_desc">拥抱开源精神，促进知识共享，建设包容多元的社区环境。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2 style="color: var(--accent-gold); margin-bottom: 1rem;" data-i18n="contact_info">联系我们</h2>
+          <div class="contact-info">
+            <div class="contact-item">
+              <span style="font-weight: 500;" data-i18n="email_label">电子邮箱</span>：support@renfeng-knowledge.com
+            </div>
+            <div class="contact-item">
+              <span style="font-weight: 500;" data-i18n="wechat_label">微信号</span>：2537471224 <button onclick="copyToClipboard('2537471224')" class="copy-btn" aria-label="复制微信号">📋</button>
+            </div>
+            <div class="contact-item">
+              <span style="font-weight: 500;" data-i18n="address_label">地址</span>：北京市朝阳区创新科技园区
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <section class="footer-section">
+        <h4 data-i18n="services">服务</h4>
+        <p data-i18n="footer_description">致力于提供高效、安全的资源分享平台</p>
+      </section>
+      <section class="footer-section">
+        <h4 data-i18n="support">支持</h4>
+        <p><span data-i18n="email_label">电子邮箱</span>：tom859174@gmail.com</p>
+        <p><span data-i18n="wechat_label">微信号</span>：2537471224 <button onclick="copyToClipboard('2537471224')" class="copy-btn" aria-label="复制微信号">📋</button></p>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="site_title">仁风知识仓库</span> · <span data-i18n="all_rights_reserved">保留所有权利</span>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
