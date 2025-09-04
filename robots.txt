@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Disallow admin paths
+Disallow: /admin
+
+# Crawling rules for specific files
+Disallow: /data/
+Disallow: /uploads/
+
+# Host and sitemap
+# Host: 设置为你的生产域名，例如：example.com
+# Sitemap 推荐在生产环境中返回绝对地址（由 /sitemap.xml 动态路由提供）
+Sitemap: /sitemap.xml

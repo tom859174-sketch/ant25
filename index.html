@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>仁风知识仓库 · Resource Download Portal</title>
+  <link rel="preload" href="css/modern-ui.css" as="style">
+  <link rel="stylesheet" href="css/modern-ui.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="仁风知识仓库 - 提供高效、安全的资源分享与下载入口" />
+  <meta name="description" content="仁风知识仓库 - 分享优质资源、工具和知识的在线平台" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+</head>
+<body>
+  <header class="modern-header">
+    <nav class="modern-nav">
+      <a class="logo-modern" href="index.html">
+        <span class="logo-icon">R</span>
+        <span data-i18n="site_title">仁风知识仓库</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" data-i18n="home">首页</a></li>
+        <li><a href="about.html" data-i18n="about">关于</a></li>
+        <li><a href="privacy.html" data-i18n="privacy_policy">隐私政策</a></li>
+        <li><a href="terms.html" data-i18n="terms_of_service">用户协议</a></li>
+        <li>
+          <select id="language-selector" aria-label="language" style="padding: 4px 8px;">
+            <option value="zh-CN">简体中文</option>
+            <option value="zh-TW">繁體中文</option>
+            <option value="en">English</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 搜索栏 -->
+    <section class="modern-search" id="home">
+      <div class="search-container">
+        <input class="search-input" type="text" placeholder="搜索资源名称或描述..." data-i18n="search_placeholder" />
+        <button class="search-btn" aria-label="search" title="搜索" data-i18n="search">🔍</button>
+      </div>
+    </section>
+
+    <section class="content-with-sidebar">
+      <!-- 侧边筛选 -->
+      <aside class="filter-sidebar">
+        <div class="filter-section">
+          <div class="filter-title" data-i18n="knowledge_hub">知识中心</div>
+          <div class="filter-options">
+            <label class="filter-option"><input class="filter-checkbox" type="checkbox" /> PDF</label>
+            <label class="filter-option"><input class="filter-checkbox" type="checkbox" /> 视频</label>
+            <label class="filter-option"><input class="filter-checkbox" type="checkbox" /> 图片</label>
+          </div>
+        </div>
+        <div class="filter-section">
+          <div class="filter-title" data-i18n="resource_depot">资源仓库</div>
+          <div class="filter-options">
+            <label class="filter-option"><input class="filter-checkbox" type="checkbox" /> 公开</label>
+            <label class="filter-option"><input class="filter-checkbox" type="checkbox" /> 私有</label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- 资源卡片网格 -->
+      <section class="resources-grid" aria-live="polite">
+        <!-- 示例资源卡片（静态演示） -->
+        <article class="resource-card fade-in">
+          <div class="resource-image">
+            <div class="resource-icon">📄</div>
+            <div class="resource-overlay"><button class="quick-preview-btn">预览</button></div>
+          </div>
+          <div class="resource-content">
+            <h3 class="resource-title">产品运营手册（PDF）</h3>
+            <p class="resource-description">覆盖需求分析、数据看板、增长模型等核心知识点。</p>
+            <div class="resource-meta">
+              <div class="resource-tags">
+                <span class="resource-tag">PDF</span>
+                <span class="resource-tag">公开</span>
+              </div>
+              <span class="muted" style="font-size: 0.85rem;">12.4 MB</span>
+            </div>
+            <div class="resource-actions">
+              <a class="btn-modern btn-primary" href="#" data-i18n="download">前往下载</a>
+              <a class="btn-modern btn-secondary" href="#" data-i18n="view">查看</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="resource-card fade-in" style="animation-delay: .06s;">
+          <div class="resource-image">
+            <div class="resource-icon">🎬</div>
+            <div class="resource-overlay"><button class="quick-preview-btn">预览</button></div>
+          </div>
+          <div class="resource-content">
+            <h3 class="resource-title">AI 绘画入门教程（视频）</h3>
+            <p class="resource-description">快速上手 Stable Diffusion 与提示词工程。</p>
+            <div class="resource-meta">
+              <div class="resource-tags">
+                <span class="resource-tag">视频</span>
+                <span class="resource-tag">公开</span>
+              </div>
+              <span class="muted" style="font-size: 0.85rem;">1.3 GB</span>
+            </div>
+            <div class="resource-actions">
+              <a class="btn-modern btn-primary" href="#" data-i18n="download">前往下载</a>
+              <a class="btn-modern btn-secondary" href="#" data-i18n="view">查看</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="resource-card fade-in" style="animation-delay: .12s;">
+          <div class="resource-image">
+            <div class="resource-icon">🖼️</div>
+            <div class="resource-overlay"><button class="quick-preview-btn">预览</button></div>
+          </div>
+          <div class="resource-content">
+            <h3 class="resource-title">品牌物料包（PNG/SVG）</h3>
+            <p class="resource-description">包含 Logo、品牌色规范与常用海报组件。</p>
+            <div class="resource-meta">
+              <div class="resource-tags">
+                <span class="resource-tag">图片</span>
+                <span class="resource-tag">公开</span>
+              </div>
+              <span class="muted" style="font-size: 0.85rem;">256 MB</span>
+            </div>
+            <div class="resource-actions">
+              <a class="btn-modern btn-primary" href="#" data-i18n="download">前往下载</a>
+              <a class="btn-modern btn-secondary" href="#" data-i18n="view">查看</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <section class="footer-section">
+        <h4 data-i18n="services">服务</h4>
+        <p data-i18n="footer_description">致力于提供高效、安全的资源分享平台</p>
+      </section>
+      <section class="footer-section">
+        <h4 data-i18n="support">支持</h4>
+        <p><span data-i18n="email_label">电子邮箱</span>：tom859174@gmail.com</p>
+        <p><span data-i18n="wechat_label">微信号</span>：2537471224 <button onclick="copyToClipboard('2537471224')" class="copy-btn" aria-label="复制微信号">📋</button></p>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="site_title">仁风知识仓库</span> · <span data-i18n="all_rights_reserved">保留所有权利</span>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
